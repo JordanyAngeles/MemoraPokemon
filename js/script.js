@@ -46,6 +46,7 @@ new Vue({
             Swal.fire({
                     title: "Perdiste",
                     html: `
+                    <img src="./img/perdiste.png" >
                 <p class="h4">Agotaste tus intentos</p>`,
                     confirmButtonText: "Jugar de nuevo",
                     allowOutsideClick: false,
@@ -58,6 +59,7 @@ new Vue({
             Swal.fire({
                     title: "¡Ganaste!",
                     html: `
+                <img src="./img/ganaste.png" >
                 <p class="h4">Muy bien hecho</p>`,
                     confirmButtonText: "Jugar de nuevo",
                     allowOutsideClick: false,
@@ -167,6 +169,7 @@ new Vue({
             // Reiniciar intentos
             this.intentos = 0;
             this.aciertos = 0;
+            this.intentosRestantes=8;
             // Asignar a instancia de Vue para que lo dibuje
             this.memorama = memoramaDividido;
         },
